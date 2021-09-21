@@ -131,8 +131,17 @@ body {
   margin-bottom: 40px;
 }
 
+.content-bottom__text p:first-child:first-line {
+  color: red;
+}
+
 .content-bottom__text p:last-child {
   margin-bottom: 0px;
+}
+
+.content-bottom__text p:last-child::first-letter {
+  color: red;
+  font-size: 40px;
 }
 
 .content-bottom-info-list {
@@ -143,8 +152,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   margin: 0 0 15px 0;
-  background: url("../img/icons/check_icon.png") left no-repeat;
-  padding-left: 35px;
+}
+
+.content-bottom-info-list li::before {
+  content: url("../img/icons/check_icon.png");
+  color: red;
+  margin-right: 11px;
 }
 
 .content-bottom-info-list li:last-child {
@@ -178,6 +191,10 @@ body {
 .content-bottom-info-list li:nth-child(3):hover {
   color: red;
   font-weight: normal;
+}
+
+.content-bottom-info-list li:nth-child(3):hover::before {
+  content: url("");
 }
 
 .content-bottom-info-list li:nth-child(4) {
