@@ -3,4 +3,5 @@
 sass_scss/css/*.css
 css_fonts/css/*.css
 css_bem/css/*.css
+flexbox/css/*.css
 *.css.map
