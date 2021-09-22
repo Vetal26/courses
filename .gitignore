@@ -2,4 +2,5 @@
 
 sass_scss/css/*.css
 css_fonts/css/*.css
+css_bem/css/*.css
 *.css.map
