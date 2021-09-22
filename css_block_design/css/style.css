@@ -152,15 +152,13 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   margin: 0 0 15px 0;
-  background: url("../img/icons/check_icon.png") left no-repeat;
-  padding-left: 35px;
 }
 
-/* .content-bottom-info-list li::before {
+.content-bottom-info-list li::before {
   content: "";
   background: url("../img/icons/check_icon.png") left no-repeat;
   padding-left: 35px;
-} */
+}
 
 .content-bottom-info-list li:last-child {
   margin: 0;
