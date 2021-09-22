@@ -1,0 +1,23 @@
+ul li {
+  list-style: none;
+}
+
+.list {
+  font-size: 18px;
+}
+
+.list li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 30px;
+}
+
+.list li::before {
+  content: "";
+  background: url("../img/icons/li.svg") 0 0 no-repeat;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 4px;
+  left: 0;
+}
