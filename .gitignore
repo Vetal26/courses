@@ -1,4 +1,5 @@
 .DS_Store
 
 sass_scss/css/*.css
+css_fonts/css/*.css
 *.css.map
