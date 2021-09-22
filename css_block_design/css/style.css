@@ -152,13 +152,15 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   margin: 0 0 15px 0;
+  background: url("../img/icons/check_icon.png") left no-repeat;
+  padding-left: 35px;
 }
 
-.content-bottom-info-list li::before {
-  content: url("../img/icons/check_icon.png");
-  color: red;
-  margin-right: 11px;
-}
+/* .content-bottom-info-list li::before {
+  content: "";
+  background: url("../img/icons/check_icon.png") left no-repeat;
+  padding-left: 35px;
+} */
 
 .content-bottom-info-list li:last-child {
   margin: 0;
@@ -193,10 +195,6 @@ body {
   font-weight: normal;
 }
 
-.content-bottom-info-list li:nth-child(3):hover::before {
-  content: url("");
-}
-
 .content-bottom-info-list li:nth-child(4) {
   opacity: 0.3;
   color: #273d46;
@@ -223,7 +221,8 @@ body {
   margin-bottom: 20px;
 }
 
-.content-bottom-info__link span {
+.content-bottom-info__link span::after {
+  content: "";
   background: url("../img/icons/Shape_2.svg") right no-repeat;
   padding-right: 30px;
 }
