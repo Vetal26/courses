@@ -1,1 +1,4 @@
 .DS_Store
+
+sass_scss/css/*.css
+*.css.map
