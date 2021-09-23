@@ -4,4 +4,5 @@ sass_scss/css/*.css
 css_fonts/css/*.css
 css_bem/css/*.css
 flexbox/css/*.css
+responsive_web_design/css/*.css
 *.css.map
