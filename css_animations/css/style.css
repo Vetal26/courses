@@ -1,0 +1,62 @@
+body {
+  height: 100%;
+}
+
+.wrapper {
+  background-color: #000;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.content {
+  padding: 50px;
+}
+
+.content__circle {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  left: 0;
+
+  /* animation-name: white-circle;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 2s; */
+
+  animation: white-circle 2s linear infinite alternate 0s forwards,
+    red-circle 5s ease infinite alternate 0s forwards;
+}
+
+.content:hover .content__circle {
+  animation-play-state: paused;
+}
+
+@keyframes white-circle {
+  0% {
+    left: 0%;
+  }
+  50% {
+    border-radius: 0%;
+  }
+  100% {
+    left: 500px;
+  }
+}
+
+@keyframes red-circle {
+  0% {
+    background-color: #fff;
+  }
+  50% {
+    background-color: red;
+  }
+  100% {
+    background-color: #fff;
+  }
+}
